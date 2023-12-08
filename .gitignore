@@ -1,0 +1,11 @@
+data/
+audio/
+output/
+
+*.env
+*.pyc
+
+temp*
+01_*
+02_*
+utils.py
