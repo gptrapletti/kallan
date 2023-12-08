@@ -1,7 +1,6 @@
 data/
 audio/
 output/
-notebooks/
 *.egg-info/
 
 *.env

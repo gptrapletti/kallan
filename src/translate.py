@@ -15,7 +15,7 @@ with open('config.yaml', 'r') as f:
 with open(cfg['original_chunks_path'], 'r') as f:
     chapter_chunks = json.load(f)
     
-prompt_template = '''Please translate the following excerpt from a novel into English. 
+prompt_template = '''Please translate the following excerpt from a novel from Swedish into English. 
 Aim to preserve the author's original style and word choice as closely as possible.
 You must answer with just the translated text and nothing else.
 Here is the excerpt: {text}'''
@@ -39,6 +39,3 @@ for chapter, chunks in tqdm(chapter_chunks.items()):
         json.dump(chapter_translations, f)
     
 print('Translation completed!')
-        
-# with open(cfg['translated_chunks_path'], 'w') as f:
-#     json.dump(chapter_translations, f)

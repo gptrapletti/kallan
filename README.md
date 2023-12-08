@@ -5,6 +5,10 @@ This project focuses on transforming a Swedish book, previously untranslated int
 
 _Set in the diverse landscapes of central Sweden, the novel spiritualizes nature and intertwines it with reflections on human enigma and childhood memories. The narrative, marked by mysticism and a sensitive, meandering style, portrays the complexity of human endeavors and the inherent ambiguity in our continuous pursuit of understanding._
 
+## Notes
+- Both `gpt-3.5-turbo-1106` and `gpt-4-1106-preview` have output token limit equal to 4096, so it's not possible to get the translation of a longer text.
+- Text for the TTS model needs to be shorter than 4096 characters.
+
 ## Improvements
 - Split in chunks within each chapter: so each chunk belongs to only one chapter.
 - Add the chapter name at the beginning to each chapter.
