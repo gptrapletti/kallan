@@ -1,6 +1,7 @@
 data/
 audio/
 output/
+notebooks/
 
 *.env
 *.pyc

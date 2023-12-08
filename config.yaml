@@ -1,0 +1,9 @@
+pdf_path: data/kallan.pdf
+
+pages_to_exclude: [0, 1, 2, 212, 213, 214, 215]
+translation_chunk_size: 10
+
+model_name: gpt-3.5-turbo-1106
+
+original_chunks_path: output/original_chunks.json
+translated_chunks_path: output/translated_chunks.json
