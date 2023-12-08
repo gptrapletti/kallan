@@ -49,15 +49,15 @@ for chapter, chunks in chapter_chunks.items():
     for i, chunk in enumerate(chunks):
         chunk_tokens.append(count_tokens(chunk))
         chunk_characters.append(len(chunk))
-    
-print(f'''PDF processed: 
-    Chunks extracted: {n_chunks}
-    Mean chunk size in tokens: {round(sum(chunk_tokens) / len(chunk_tokens))}
-    Min chunk size in tokens: {round(min(chunk_tokens))}
-    Max chunk size in tokens: {round(max(chunk_tokens))}
-    Mean chunk size in characters: {round(sum(chunk_characters) / len(chunk_characters))}
-    Min chunk size in characters: {round(min(chunk_characters))}
-    Max chunk size in characters: {round(max(chunk_characters))}''')
+
+print('Processing completed!')    
+print(f'''Chunks extracted: {n_chunks}
+Mean chunk size in tokens: {round(sum(chunk_tokens) / len(chunk_tokens))}
+Min chunk size in tokens: {round(min(chunk_tokens))}
+Max chunk size in tokens: {round(max(chunk_tokens))}
+Mean chunk size in characters: {round(sum(chunk_characters) / len(chunk_characters))}
+Min chunk size in characters: {round(min(chunk_characters))}
+Max chunk size in characters: {round(max(chunk_characters))}''')
 
 with open(cfg['original_chunks_path'], 'w') as f:
     json.dump(chapter_chunks, f)

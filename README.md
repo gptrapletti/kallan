@@ -10,3 +10,8 @@ _Set in the diverse landscapes of central Sweden, the novel spiritualizes nature
 - Add the chapter name at the beginning to each chapter.
 - Use a lower number of sentences per chunk (like 10), to stay within TTS limit (4096 characters).
 - Use GPT4.
+
+## Todo
+- requirements
+- notebooks for costs
+- write process on readme, with context limits etc

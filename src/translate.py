@@ -38,7 +38,7 @@ for chapter, chunks in tqdm(chapter_chunks.items()):
     with open(cfg['translated_chunks_path'], 'w') as f:
         json.dump(chapter_translations, f)
     
-print('Translation compleyed!')
+print('Translation completed!')
         
 # with open(cfg['translated_chunks_path'], 'w') as f:
 #     json.dump(chapter_translations, f)

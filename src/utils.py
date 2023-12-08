@@ -22,6 +22,15 @@ def merge_sentences(sentences, n):
         
     return chunks
 
+def from_str_to_mp3(client, text, dst):
+    '''Takes a strings and does text-to-speech to save a MP3 file.'''
+    response = client.audio.speech.create(
+        model="tts-1",
+        voice="onyx",
+        input=text
+    )    
+    response.stream_to_file(dst)
+
 # def is_chapter_start(page_text):
 #     '''Check is a page is the starting of a chapter.
     
