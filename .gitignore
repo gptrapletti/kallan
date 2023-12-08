@@ -6,6 +6,3 @@ output/
 *.pyc
 
 temp*
-01_*
-02_*
-utils.py
