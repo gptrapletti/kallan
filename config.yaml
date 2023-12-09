@@ -4,8 +4,9 @@ pages_to_exclude: [0, 1, 2, 212, 213, 214, 215]
 translation_chunk_size: 10
 
 model_name: gpt-3.5-turbo-1106
+# model_name: gpt-4-1106-preview
 
 original_chunks_path: output/original_chunks.json
-translated_chunks_path: output/translated_chunks.json
+translated_chunks_path: output/translated_chunks_gpt4_20231209.json
 audiotrack_path: output/tracks
 audiobook_path: output/kallan.mp3

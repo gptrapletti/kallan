@@ -3,7 +3,11 @@ import json
 from pydub import AudioSegment
 import os
 import yaml
+import time
+import dotenv
 from src.utils import from_str_to_mp3
+
+_ = dotenv.load_dotenv(dotenv.find_dotenv())
 
 with open('config.yaml', 'r') as f:
     cfg = yaml.safe_load(f)
@@ -41,6 +45,7 @@ for chapter, chunks in chapter_chunks.items():
     for i, chunk in enumerate(chunks):
         print(f'chunk {i + 1}/{len(chunks)}')
         chunk_str = f'{i + 3}'.zfill(3) # +3 to follow the intro files
+        time.sleep(3)
         from_str_to_mp3(
             client=client, 
             text=chunk, 

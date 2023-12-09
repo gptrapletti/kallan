@@ -1,3 +1,9 @@
+# - Both `gpt-3.5-turbo-1106` and `gpt-4-1106-preview` have output token limit equal to 4096, so 
+#   it's not possible to get the translation of a longer text.
+# - Text for the TTS model needs to be shorter than 4096 characters.
+# - For these reasons, the document text is divided in chunks, with size adeguate for both the 
+#   translation and the TTS models.
+
 import fitz
 import yaml
 import re
