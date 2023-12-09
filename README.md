@@ -1,6 +1,6 @@
 # Källan: from Swedish novel to English audiobook
 
-<img src="docs/cover_kallan_03.jpg" width="432" height="600">
+![](docs/cover_kallan_03.jpg)
 
 _It is a source within us, Felix. An invisible source — a source that is very difficult to access. It is so close but yet so far away, so far away but yet so close. It requires so much of us before it reveals itself. And once we have found it, we can lose it again. And then it's just as difficult to find it again. Once when I was young, I found it — but don't ask me how I found it; I don't know, maybe it was just a grace granted to me. I'm looking for it again; I'm always looking for it. Sometimes I feel that I'm so close to it that I expect to see it in the next moment, but the next day it's just as far away as before._
 
