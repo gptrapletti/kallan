@@ -52,4 +52,11 @@ for chapter, chunks in chapter_chunks.items():
             dst=os.path.join(cfg['audiotrack_path'], f'chapter_{chap_str}_track_{chunk_str}.mp3')
         )
 
+# Add final silent track
+silent = AudioSegment.silent(duration=3000)
+silent.export(
+    out_f=os.path.join(cfg['audiotrack_path'], 'chapter_99_track_000.mp3'),
+    format='mp3'
+)
+
 print('Text-to-speech completed!')

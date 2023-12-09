@@ -14,7 +14,7 @@ for filename in tqdm(sorted(os.listdir(cfg['audiotrack_path']))):
         audio = AudioSegment.from_mp3(os.path.join(cfg['audiotrack_path'], filename))
         combined += audio
 
-print('Saving file...')
+print('Exporting file...')
 combined.export(cfg['audiobook_path'], format="mp3")
 
 print('Completed!')
