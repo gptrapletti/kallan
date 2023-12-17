@@ -16,4 +16,4 @@ Scripts:
 - `src/merge_tracks.py`: merges all the audio tracks in a unique MP3 file.
 
 ## Links
-The audiobook can be listened to [here](https://www.youtube.com/watch?v=lXQMJaTUMpc).
+The audiobook can be listened to on [YouTube](https://www.youtube.com/watch?v=lXQMJaTUMpc), and it's also available as an MP3 file upon request.
